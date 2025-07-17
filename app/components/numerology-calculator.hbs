@@ -1,0 +1,17 @@
+<div class="numerology-app" style="padding: 2rem; max-width: 400px; margin: auto; font-family: sans-serif;">
+  <h2 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem;">Numerology Calculator</h2>
+
+  <input
+    type="text"
+    placeholder="Enter your name"
+    value={{this.name}}
+    {{on "input" this.handleInput}}
+    style="padding: 0.5rem; width: 100%; margin-bottom: 1rem; font-size: 1rem;"
+  />
+
+  {{#if this.result}}
+    <div style="font-size: 1.2rem; color: green;">
+      Numerology Number: {{this.result}}
+    </div>
+  {{/if}}
+</div>
