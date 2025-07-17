@@ -2,7 +2,15 @@
 
 module.exports = function(deployTarget) {
   let ENV = {
-    build: {}
+    build: {
+      environment: 'production'
+    },
+    git: {
+      repo: 'https://github.com/imkathir/name-numerology-calculator.git',
+      branch: 'gh-pages',
+      worktreePath: '/tmp/deploy-numerology',
+      commitMessage: 'Deploying %@'
+    }
     // include other plugin configuration that applies to all deploy targets here
   };
 
